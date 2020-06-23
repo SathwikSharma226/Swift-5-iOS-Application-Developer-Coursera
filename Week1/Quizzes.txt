@@ -1,0 +1,15 @@
+1. Explain the difference between variables and constants
+Ans: Variables can be changed but constants cannot. As the name suggests, Constants are immutable and read-only. Variables are mutable thus can be changed '
+
+2. When might a programmer choose to use a constant instead of a variable? What is an example use case.
+Ans: You use a constant when the value of a variable never changes during the lifetime of your program. Say you are using the value of Pi or the value of e which are universally having the same value, at these instances you get to use constants  
+
+3. Which of the following are acceptable ways to concatenate strings?
+Ans: let name = "Susan" + " " + "Smith" AND let make = "Toyota" let printCar = "\(make)" + " Car" AND et first = "eggs" let second = "milk" let ingredients = "\(first) + \(second)"
+
+4. Given the following code, what is the Type of the result constant?
+
+let first = 25.0
+let second = 3
+let result = Double(Int(first) * second)
+Ans: Double
