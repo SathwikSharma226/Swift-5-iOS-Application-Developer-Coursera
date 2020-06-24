@@ -1,0 +1,10 @@
+1.Given the code below, what is the value of the result constant?
+var invalid = true
+var valid = false
+let result = invalid == valid
+Ans: False
+
+2. Given the code below, what will be the value of the result constant?
+let data = ["Red", "Blue", "Green"]
+let result = data[3]
+Ans: The code will compile but will cause a runtime error
