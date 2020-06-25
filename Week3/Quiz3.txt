@@ -1,0 +1,159 @@
+1. Given the code below, what is the value of the result constant?
+var data = ["a1":"Fire","b3":"Ice", "c9":"Earth"]
+data["a1"] = nil
+let result = data["c9"]
+Ans: Earth
+
+2. Which of the following options is valid syntax for declaring a function?
+Ans: func calcArea(length: Int, width: Int) -> Int {
+    return 0
+}
+
+-------------Weekend Quiz/ 20 Questions-------------------------------------
+
+1. When this code is executed, what will be the value of the t constant?
+let t = 5
+t = t + 5
+Ans: The code will not compile
+
+2. When this code is executed, what will be the value of the result variable?
+var result = "6"
+result = result + "7"
+Ans: 67
+
+3. When this code is executed, what is the value of the item constant?
+let items = ["Milk", "Eggs", "Bread"]
+let item = items[1]
+Ans: Eggs
+
+4. When this code compiles, what will the value of the constant fullName be?
+var lastName: String?
+func getFullName(firstName: String) -> String {
+    return firstName + " " + lastName!
+}
+let fullName = getFullName(firstName: "John")
+Ans: Program will crsh due to unwrapping
+
+5. When this code is compiled, what will be the value of the area constant?
+let length = 20.5
+let width = 10
+let area = length * width
+Ans: The program will not compile
+
+6. Given the code below, what data type does the constant length have?
+let length = 489.21
+Ans: Double
+
+7. When this code is executed, what will the final value of the variable amount be?
+var amount = 0
+
+for x in 0..<10 {
+    if x % 2 == 0 {
+        amount += 3
+    }
+}
+Ans:15
+
+8. Given the code below, how can you access and store the last element in the array named planets?
+let planets = ["Jupiter", "Mars", "Venus", "Earth"]
+Ans: let planet = planets[3]
+let planet1 = planets[planets.count-1]
+
+9. Given the code below, what will be the value of the result constant?
+let result = true == false && false != true
+Ans: false
+
+10. When the code below is executed, what will be the value of the profile constant?
+let firstName = "Amy"
+let lastName = "Smith"
+let age = 25
+
+let profile = "\(firstName)\(lastName)\(age)"
+Ans: AmySmith25
+
+11. When the code is executed below, what will be the value of the average constant?
+let average = Int(10.3 + 4.0) / 2
+Ans: 7
+
+12. Which of the following are correct ways to modify an Array in Swift?
+Ans: myArray.append("new item")
+myArray.insert("new item", at: 0)
+
+13. When the code below is executed, what will be the final value of the sum variable?
+var sum = 0
+for i in 0...20 {
+    sum += 1
+}
+Ans: 21
+
+14. When the code below is executed, what will be the value of the result constant?
+var nicknames = ["jax" : "James"]
+nicknames["spike"] = "Tom"
+nicknames["jax"] = "Billy"
+
+let result = nicknames["jax"]!
+Ans: Optional("Billy")
+
+15. When the code below executes, what will be the final value of the result variable?
+var result = 0.0
+
+func calcPerimeter(sides: [Double], perimeter: Double) {
+    var perm = perimeter
+    for x in 0..<sides.count {
+        perm += sides[x]
+    }
+}
+
+calcPerimeter(sides:[5.0,2.0,3.1], perimeter: result)
+Ans: 0
+
+16. Which of the following is correct syntax for conditional operations in Swift?
+Ans: var result = false
+if result
+{
+    print(true)
+}
+
+17. When the code is executed below, what will be the value of the result constant?
+var isValid = false
+let result = isValid ? 15 : 6
+Ans: 6
+
+18. When the code is executed below, what will be the final value of the isValid variable?
+var data: String?
+var isValid = true
+
+func processata(someData: String?) {
+    guard let validData = someData else {
+        isValid = false
+        return
+    }
+    isValid = true
+}
+
+processData(someData: data)
+Ans: false
+
+19. When the code below is executed, what will be the value of the result constant?
+enum Device: Int {
+    case iPhone
+    case Android
+    case MacBook
+    case Windows
+}
+
+var chosen: Device = .MacBook
+let result = chosen.rawValue
+Ans: 2 
+
+20. When the code below is executed, what will be the value of the fullName variable?
+var fullName = "empty"
+var firstName: String?
+var lastName: String?
+
+firstName = "Jan"
+
+if let first = firstName, let last = lastName {
+    fullName = "\(first) \(last)"
+}
+Ans: empty
