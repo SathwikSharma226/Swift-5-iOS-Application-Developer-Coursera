@@ -1,0 +1,132 @@
+Question 1
+With Object-oriented programming in Swift, if in a child class, you wanted to replace the functionality of a parent function, what would you do?
+Ans: Use the override keyword in front of the function definition
+
+-----------------------------------------------------------------------------
+1.Question 1
+In Swift, inheritance is NOT possible when using a Struct
+Ans: True
+
+2.Question 2
+The acronym MVC stands for what?
+Ans: Model View Controller
+
+3.Question 3
+When the code below is executed, what output will be printed?
+class Person {
+    func speak() {
+        print("Hello")
+    }
+}
+
+class Frenchman: Person {
+    override func speak() {
+        print("Bonjour")
+    }
+}
+
+let jaque = Frenchman()
+jaque.speak()
+Ans: Bonjour
+
+4.Question 4
+When the code below is executed, what output will be printed?
+class Person{
+    var phrase = ""
+    func speak() {
+        phrase = "Hello"
+    }
+}
+
+class Italian: Person {
+    override func speak() {
+        super.speak()
+        phrase += " Ciao"
+        print(phrase)
+    }
+}
+let vinny = Italian()
+vinny.speak()
+Ans: Hello Ciao
+
+5.Question 5
+What is true concerning the code below?
+class Vehicle {
+    func info() {
+        print("Vehicle")
+    }
+}
+
+class Truck: Vehicle {
+    override func info() {
+        print("Truck")
+    }
+}
+
+let aTruck = Truck()
+if let aVehicle = aTruck as? Vehicle {
+    aVehicle.info()
+}
+Ans: Truck will be in the console and is an eg of polymorphism
+
+6.Question 6
+When the code below is executed, what output will be printed?
+struct Person {
+    var name: String
+    var age: Int
+}
+let john = Person(name: "John", age: 21)
+var steven = john
+steven.name = "Steven"
+print(john.name)
+Ans: John
+
+7.Question 7
+When the code is executed below, what output will be printed?
+class Person {
+    var name: String
+    var age: Int
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+}
+let john = Person(name: "John", age: 21)
+var steven = john
+steven.name = "Steven"
+print(john.name)
+Ans: Steven
+
+8.Question 8
+What purpose does the controller serve in Model View Controller?
+Ans: It binds the data from models into view/UI of the application
+
+9.Question 9
+What purpose does the view serve in Model View Controller
+Ans: A view is a representation of something that the user can visually see in an application 
+
+10.Question 10
+When the code is executed below, what output will be printed?
+class Humanoid {
+    func species() {
+        print("Humanoid")
+    }
+}
+class Orc: Humanoid {
+    func species() {
+        print("Orc")
+    }
+}
+class Elf: Humanoid {
+    func species() {
+        print("Elf")
+    }
+}
+class Urukhai: Orc, Elf {
+    func species() {
+        print("Uruk-hai")
+    }
+}
+let urukhai = Urukhai()
+urukhai.species()
+Ans: Code will not compile
